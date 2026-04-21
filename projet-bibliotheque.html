@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projet Bibliothèque - Application web PHP/MySQL de gestion de bibliothèque">
+  <title>Bibliothèque | Loïc KOEHLY-DELGADO</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🖥️</text></svg>">
+</head>
+<body>
+  <div id="scroll-progress"></div>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-brand">LKD</a>
+    <div class="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="projets.html" class="active">Projets</a></li>
+      <li><a href="competences.html">Compétences</a></li>
+      <li><a href="certifications.html">Certifications</a></li>
+      <li><a href="veille.html">Veille</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="project-hero">
+    <a href="projets.html" class="back-link">← Retour aux projets</a>
+    <h1 class="project-hero-title">Projet Bibliothèque</h1>
+    <div class="project-hero-meta">
+      <span class="project-status status-slam">SLAM</span>
+      <span class="tag">2023-2024</span>
+    </div>
+    <p class="project-role">Projet BTS SIO SLAM</p>
+  </section>
+
+  <section class="project-detail-section">
+    <h2>Description</h2>
+    <p>
+      Projet de développement web réalisé dans le cadre de la matière " slam" (Solutions 
+      Logicielles et Applications Métier) du BTS SIO. L'application permet de gérer une 
+      bibliothèque : prêts, retours, consultation du catalogue et gestion des membres.
+    </p>
+    <p>
+      C'était mon premier projet majeur en développement web, l'occasion d'apprendre les 
+      bases du PHP et de MySQL, ainsi que la structure d'une application web complète.
+    </p>
+
+    <h2>Technologies utilisées</h2>
+    <div class="project-tags" style="margin-bottom: 2rem;">
+      <span class="tech-tag">PHP</span>
+      <span class="tech-tag">MySQL</span>
+      <span class="tech-tag">HTML5</span>
+      <span class="tech-tag">CSS3</span>
+      <span class="tech-tag">JavaScript</span>
+      <span class="tech-tag">Bootstrap</span>
+    </div>
+
+    <h2>Fonctionnalités</h2>
+    <ul class="features-list">
+      <li>Interface d'authentification pour librarians et membres</li>
+      <li>CRUD complet pour le catalogue de livres</li>
+      <li>Gestion des prêts et retours avec dates d'échéance</li>
+      <li>Système de recherche avancée par titre, auteur,isbn</li>
+      <li>Gestion des membres (inscription, modification, désactivation)</li>
+      <li>Dashboard estadísticas : prêts en cours, retards, popular books</li>
+      <li>Notifications pour les retours快要到期</li>
+      <li>Export catalog en CSV</li>
+    </ul>
+
+    <h2>Base de données</h2>
+    <p>
+      Base MySQL avec tables : livres, membres, prêts, auteurs, catégories, exemplaires. 
+      Relations normalisées avec contraintes d'intégrité référentielle.
+    </p>
+
+    <h2>Screenshot / Mockup</h2>
+    <div class="screenshot-placeholder">
+      📸 Capture d'écran de l'application<br>
+      <small>À venir</small>
+    </div>
+  </section>
+
+  <section class="related-projects">
+    <h2 class="section-title">Projets liés</h2>
+    <div class="projects-grid">
+      <a href="projet-gsb.html" class="project-card">
+        <div class="project-visual">
+          <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="1" y="1" width="22" height="22" rx="2"/>
+            <path d="M8 8h8"/>
+            <path d="M8 12h8"/>
+            <path d="M8 16h8"/>
+          </svg>
+          <span class="project-status status-sisr">SISR</span>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Projet GSB – Cisco</h3>
+          <p class="project-role">Projet SISR</p>
+          <p class="project-desc">Simulation réseau Packet Tracer.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Loïc KOEHLY-DELGADO · Construit avec passion</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

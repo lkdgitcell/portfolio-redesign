@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Serveur TrueNAS Scale - NAS avec Docker, Jellyfin et Nextcloud">
+  <title>TrueNAS Scale | Loïc KOEHLY-DELGADO</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🖥️</text></svg>">
+</head>
+<body>
+  <div id="scroll-progress"></div>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-brand">LKD</a>
+    <div class="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="projets.html" class="active">Projets</a></li>
+      <li><a href="competences.html">Compétences</a></li>
+      <li><a href="certifications.html">Certifications</a></li>
+      <li><a href="veille.html">Veille</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="project-hero">
+    <a href="projets.html" class="back-link">← Retour aux projets</a>
+    <h1 class="project-hero-title">Serveur TrueNAS Scale</h1>
+    <div class="project-hero-meta">
+      <span class="project-status status-personnel">Personnel</span>
+      <span class="tag">2024</span>
+    </div>
+    <p class="project-role">Projet personnel</p>
+  </section>
+
+  <section class="project-detail-section">
+    <h2>Description</h2>
+    <p>
+      Projet de mise en place d'un serveur NAS complet avec TrueNAS Scale comme système 
+      d'exploitation. TrueNAS Scale, basé sur Debian, permet une intégration native avec 
+      Docker et Kubernetes, ce qui en fait une solution idéale pour un home lab.
+    </p>
+    <p>
+      L'objectif principal était de créer un serveur de stockage centralisé avec protection 
+      des données par redondance, hébergeant plusieurs services auto-hébergés pour mon 
+      usage personnel.
+    </p>
+
+    <h2>Technologies utilisées</h2>
+    <div class="project-tags" style="margin-bottom: 2rem;">
+      <span class="tech-tag">TrueNAS Scale</span>
+      <span class="tech-tag">Docker</span>
+      <span class="tech-tag">Jellyfin</span>
+      <span class="tech-tag">Nextcloud</span>
+      <span class="tech-tag">Traefik</span>
+      <span class="tech-tag">ZFS</span>
+    </div>
+
+    <h2>Configuration réalisée</h2>
+    <ul class="features-list">
+      <li>Installation TrueNAS Scale sur serveur dédié (HP ProLiant microServer)</li>
+      <li>Configuration pool ZFS avec redondance RAIDZ1 (3x 4To)</li>
+      <li>Création datasets ZFS pour séparation stockage/documents/backup</li>
+      <li>Déploiement Docker via interface TrueNAS pour Jellyfin</li>
+      <li>Configuration Jellyfin pour streaming média local (films, séries, musique)</li>
+      <li>Installation Nextcloud pour cloud personnel (contacts, calendriers, fichiers)</li>
+      <li>Mise en place Traefik comme reverse proxy avec certificats Let's Encrypt</li>
+      <li>Configuration sauvegardes automatiques vers disque externe</li>
+      <li>Monitoring avec TrueNAS builtin et alerts email</li>
+    </ul>
+
+    <h2>Screenshot / Mockup</h2>
+    <div class="screenshot-placeholder">
+      📸 Capture d'écran ou mockup du projet<br>
+      <small>À venir</small>
+    </div>
+  </section>
+
+  <section class="related-projects">
+    <h2 class="section-title">Projets liés</h2>
+    <div class="projects-grid">
+      <a href="projet-homelab.html" class="project-card">
+        <div class="project-visual">
+          <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+            <polyline points="9 22 9 12 15 12 15 22"/>
+          </svg>
+          <span class="project-status status-personnel">Personnel</span>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Home Lab Personnel</h3>
+          <p class="project-role">Projet personnel</p>
+          <p class="project-desc">TrueNAS intégré dans mon home lab complet.</p>
+        </div>
+      </a>
+      <a href="projet-proxmox.html" class="project-card">
+        <div class="project-visual">
+          <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <ellipse cx="12" cy="5" rx="9" ry="3"/>
+            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+          </svg>
+          <span class="project-status status-sisr">SISR</span>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Proxmox Backup Server</h3>
+          <p class="project-role">Projet SISR</p>
+          <p class="project-desc">Serveur de sauvegarde Proxmox.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Loïc KOEHLY-DELGADO · Construit avec passion</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

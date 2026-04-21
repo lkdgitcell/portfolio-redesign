@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projet GSB Cisco - Simulation réseau avec Packet Tracer, VLAN et routage">
+  <title>GSB Cisco | Loïc KOEHLY-DELGADO</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🖥️</text></svg>">
+</head>
+<body>
+  <div id="scroll-progress"></div>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-brand">LKD</a>
+    <div class="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="projets.html" class="active">Projets</a></li>
+      <li><a href="competences.html">Compétences</a></li>
+      <li><a href="certifications.html">Certifications</a></li>
+      <li><a href="veille.html">Veille</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="project-hero">
+    <a href="projets.html" class="back-link">← Retour aux projets</a>
+    <h1 class="project-hero-title">Projet GSB – Cisco</h1>
+    <div class="project-hero-meta">
+      <span class="project-status status-sisr">SISR</span>
+      <span class="tag">2024</span>
+    </div>
+    <p class="project-role">Projet BTS SIO SISR</p>
+  </section>
+
+  <section class="project-detail-section">
+    <h2>Description</h2>
+    <p>
+      Projet de simulation réseau avec Cisco Packet Tracer dans le cadre de la matière 
+      "Communication et réseaux" du BTS SIO SISR. L'entreprise fictive GSB (Laboratoire 
+      Pharmaceutique Galaxy) necesitaba une infraestructura de red sécurisée con múltiples 
+      servicios et une segmentation adecuada.
+    </p>
+    <p>
+      Packet Tracer permet de simuler des équipements réseau Cisco dans un environnement 
+      virtuel. C'est un outil pédagogique essentiel pour apprendre les bases du networking.
+    </p>
+
+    <h2>Technologies utilisées</h2>
+    <div class="project-tags" style="margin-bottom: 2rem;">
+      <span class="tech-tag">Cisco Packet Tracer</span>
+      <span class="tech-tag">Switch Cisco</span>
+      <span class="tech-tag">Router Cisco</span>
+      <span class="tech-tag">VLAN</span>
+      <span class="tech-tag">Routage inter-VLAN</span>
+      <span class="tech-tag">ACL</span>
+    </div>
+
+    <h2>Architecture réseau</h2>
+    <ul class="features-list">
+      <li>Configuration de 3 bâtiments avec switches gérés Cisco 2960</li>
+      <li>Segmentation VLAN par service : Direction, Recherche, Production, Administratif</li>
+      <li>Routage inter-VLAN avec router-on-a-stick</li>
+      <li>Mise en place DHCP relay pour attribution IPs dynamique</li>
+      <li>Configuration ACL pour restriction accès entre VLANs</li>
+      <li>Implémentation NAT/PAT pour accès Internet</li>
+      <li>Configuration routeur border pour connexion FAI</li>
+      <li>Test连通性 et dépannage réseau</li>
+    </ul>
+
+    <h2>Screenshot / Mockup</h2>
+    <div class="screenshot-placeholder">
+      📸 Capture d'écran Packet Tracer<br>
+      <small>À venir</small>
+    </div>
+  </section>
+
+  <section class="related-projects">
+    <h2 class="section-title">Projets liés</h2>
+    <div class="projects-grid">
+      <a href="projet-opnsense.html" class="project-card">
+        <div class="project-visual">
+          <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+          <span class="project-status status-sisr">SISR</span>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Pare-feu OPNsense</h3>
+          <p class="project-role">Projet SISR</p>
+          <p class="project-desc">Firewall avec segmentation VLAN.</p>
+        </div>
+      </a>
+      <a href="projet-scc.html" class="project-card">
+        <div class="project-visual">
+          <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="4" y="4" width="16" height="16" rx="2"/>
+            <rect x="9" y="9" width="6" height="6"/>
+          </svg>
+          <span class="project-status status-stage">Stage</span>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Stage SCC France</h3>
+          <p class="project-role">Stagiaire</p>
+          <p class="project-desc">Découverte infrastructure réseau profesionnelle.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Loïc KOEHLY-DELGADO · Construit avec passion</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

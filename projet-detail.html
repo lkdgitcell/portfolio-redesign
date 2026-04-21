@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Page projet - Loïc KOEHLY-DELGADO">
+  <title>Projet | Loïc KOEHLY-DELGADO</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🖥️</text></svg>">
+</head>
+<body>
+  <div id="scroll-progress"></div>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-brand">LKD</a>
+    <div class="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="projets.html" class="active">Projets</a></li>
+      <li><a href="competences.html">Compétences</a></li>
+      <li><a href="certifications.html">Certifications</a></li>
+      <li><a href="veille.html">Veille</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="project-hero">
+    <a href="projets.html" class="back-link">← Retour aux projets</a>
+    <h1 class="project-hero-title">Titre du Projet</h1>
+    <div class="project-hero-meta">
+      <span class="project-status status-sisr">Type</span>
+      <span class="tag">Date</span>
+    </div>
+    <p class="project-role">Rôle</p>
+  </section>
+
+  <section class="project-detail-section">
+    <h2>Description</h2>
+    <p>
+      Description du projet ici. Expliquez le contexte, les objectifs et les résultats attendus.
+    </p>
+
+    <h2>Technologies utilisées</h2>
+    <div class="project-tags" style="margin-bottom: 2rem;">
+      <span class="tech-tag">Technologie 1</span>
+      <span class="tech-tag">Technologie 2</span>
+      <span class="tech-tag">Technologie 3</span>
+    </div>
+
+    <h2>Configuration / Fonctionnalités</h2>
+    <ul class="features-list">
+      <li>Fonctionnalité 1</li>
+      <li>Fonctionnalité 2</li>
+      <li>Fonctionnalité 3</li>
+    </ul>
+
+    <h2>Screenshot / Mockup</h2>
+    <div class="screenshot-placeholder">
+      📸 Capture d'écran ou mockup du projet<br>
+      <small>À venir</small>
+    </div>
+  </section>
+
+  <section class="related-projects">
+    <h2 class="section-title">Projets liés</h2>
+    <div class="projects-grid">
+      <a href="projet-opnsense.html" class="project-card">
+        <div class="project-visual">
+          <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+          <span class="project-status status-sisr">SISR</span>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Pare-feu OPNsense</h3>
+          <p class="project-role">Projet SISR</p>
+          <p class="project-desc">Firewall avec IDS/IPS et segmentation VLAN.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Loïc KOEHLY-DELGADO · Construit avec passion</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

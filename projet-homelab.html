@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Home Lab Personnel - Laboratoire domestique avec OPNsense, TrueNAS, VLANs">
+  <title>Home Lab | Loïc KOEHLY-DELGADO</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🖥️</text></svg>">
+</head>
+<body>
+  <div id="scroll-progress"></div>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-brand">LKD</a>
+    <div class="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="projets.html" class="active">Projets</a></li>
+      <li><a href="competences.html">Compétences</a></li>
+      <li><a href="certifications.html">Certifications</a></li>
+      <li><a href="veille.html">Veille</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="project-hero">
+    <a href="projets.html" class="back-link">← Retour aux projets</a>
+    <h1 class="project-hero-title">Home Lab Personnel</h1>
+    <div class="project-hero-meta">
+      <span class="project-status status-personnel">Personnel</span>
+      <span class="tag">En cours</span>
+    </div>
+    <p class="project-role">Projet personnel · 2024-Présent</p>
+  </section>
+
+  <section class="project-detail-section">
+    <h2>Description</h2>
+    <p>
+      Mon home lab est un laboratoire domestique sur lequel je teste et apprends les technologies 
+      d'infrastructure. C'est un projet continu qui évolue selon mes besoins et mes的兴趣爱好. 
+      Il me permet de mettre en pratique les concepts vus en formation dans un environnement réel.
+    </p>
+    <p>
+      Le lab est organisé autour d'un pare-feu OPNsense作为网关，配有一个NAS TrueNAS Scale用于存储，还有一个Proxmox节点用于虚拟化。 所有这些都通过VLAN隔离。
+    </p>
+
+    <h2>Technologies utilisées</h2>
+    <div class="project-tags" style="margin-bottom: 2rem;">
+      <span class="tech-tag">OPNsense</span>
+      <span class="tech-tag">TrueNAS Scale</span>
+      <span class="tech-tag">Proxmox VE</span>
+      <span class="tech-tag">VLAN</span>
+      <span class="tech-tag">WireGuard</span>
+      <span class="tech-tag">Docker</span>
+      <span class="tech-tag">Self-hosted</span>
+    </div>
+
+    <h2>Infrastructure actuelle</h2>
+    <ul class="features-list">
+      <li>Pare-feu OPNsense sur serveur dédié avec IDS/IPS Suricata</li>
+      <li>Segmentation VLAN : IoT,침, guests, servers, management</li>
+      <li>NAS TrueNAS Scale avec stockage ZFS redondant</li>
+      <li>Services auto-hébergés : Jellyfin, Nextcloud, Home Assistant</li>
+      <li>Proxmox VE pour machines virtuelles de test</li>
+      <li>VPN WireGuard pour accès distant sécurisé</li>
+      <li>Reverse proxy Traefik avec SSL Let's Encrypt</li>
+      <li>Monitoring avec dashboard Grafana</li>
+      <li>Documentation sur Notion et wiki interne</li>
+    </ul>
+
+    <h2>Objectifs d'apprentissage</h2>
+    <p>
+      Ce projet me permet d'approfondir mes compétences en administration systèmes, 
+      sécurité réseau et virtualisation. J'apprends également les bonnes pratiques 
+      de sauvegarde, de monitoring et de documentation.
+    </p>
+
+    <h2>Screenshot / Mockup</h2>
+    <div class="screenshot-placeholder">
+      📸 Capture d'écran ou mockup du projet<br>
+      <small>À venir</small>
+    </div>
+  </section>
+
+  <section class="related-projects">
+    <h2 class="section-title">Projets liés</h2>
+    <div class="projects-grid">
+      <a href="projet-opnsense.html" class="project-card">
+        <div class="project-visual">
+          <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+          <span class="project-status status-sisr">SISR</span>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Pare-feu OPNsense</h3>
+          <p class="project-role">Projet SISR</p>
+          <p class="project-desc">Firewall central du home lab.</p>
+        </div>
+      </a>
+      <a href="projet-truenas.html" class="project-card">
+        <div class="project-visual">
+          <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+          </svg>
+          <span class="project-status status-personnel">Personnel</span>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Serveur TrueNAS Scale</h3>
+          <p class="project-role">Projet personnel</p>
+          <p class="project-desc">NAS central du home lab.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Loïc KOEHLY-DELGADO · Construit avec passion</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

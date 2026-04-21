@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Veille technologique de Loïc KOEHLY-DELGADO">
+  <title>Veille | Loïc KOEHLY-DELGADO</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🖥️</text></svg>">
+</head>
+<body>
+  <div id="scroll-progress"></div>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-brand">LKD</a>
+    <div class="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="projets.html">Projets</a></li>
+      <li><a href="competences.html">Compétences</a></li>
+      <li><a href="certifications.html">Certifications</a></li>
+      <li><a href="veille.html" class="active">Veille</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="page-header">
+    <h1>Veille Technologique</h1>
+    <p>Mes sujets de veille en infrastructure et cybersécurité</p>
+  </header>
+
+  <section class="section" style="padding-top: 0;">
+    <p class="veille-intro">
+      Dans le cadre de ma formation BTS SIO SISR, je réalise une veille technologique sur les sujets 
+      qui m'intéressent particulièrement : la cybersécurité, les infrastructures réseau et la protection 
+      des données. Cette page présente mes principaux sujets de veille et mes sources.
+    </p>
+
+    <div class="veille-grid">
+      
+      <!-- Fuites de données -->
+      <div class="veille-card reveal">
+        <h3>🔓 Fuites de données</h3>
+        <p>
+          La multiplication des fuites de données représente une menace croissante pour les entreprises 
+          et les particuliers. Je suis l'actualité des grandes fuites (Equifax, Yahoo, LinkedIn, etc.) 
+          pour comprendre les méthodes d'attaque utilisées et les bonnes pratiques de prévention.
+        </p>
+        <p>
+          <strong>Points clés :</strong> Chiffrement des données sensibles, authentification forte (MFA), 
+          surveillance dark web, plans de réponse aux incidents.
+        </p>
+      </div>
+
+      <!-- Chiffrement -->
+      <div class="veille-card reveal">
+        <h3>🔐 Technologies de chiffrement</h3>
+        <p>
+          Le chiffrement est au cœur de la sécurité moderne. Je m'intéresse aux algorithmes de chiffrement 
+          (AES-256, RSA), aux protocoles VPN (WireGuard, OpenVPN), et aux solutions de chiffrement 
+          pour les données au repos et en transit.
+        </p>
+        <p>
+          <strong>Points clés :</strong> Chiffrement bout-en-bout, gestion des clés cryptographiques, 
+          certificats TLS/SSL, enjeux du chiffrement post-quantique.
+        </p>
+      </div>
+
+      <!-- RGPD -->
+      <div class="veille-card reveal">
+        <h3>📋 RGPD & Protection des données</h3>
+        <p>
+          Le Règlement Général sur la Protection des Données impose des obligations strictes aux 
+          entreprises concernant le traitement des données personnelles. Je suis l'évolution de la 
+          réglementation et les sanctions prononcées par la CNIL.
+        </p>
+        <p>
+          <strong>Points clés :</strong> Consentement, droit à l'oubli, portabilité des données, 
+          DPO, registres de traitement, sanctions (amendes record).
+        </p>
+      </div>
+
+    </div>
+
+    <h2 class="section-title" style="font-size: 1.5rem; margin-top: 4rem;">Sources suivies</h2>
+    <ul class="sources-list">
+      <li>
+        <a href="https://www.ssi.gouv.fr/" target="_blank" rel="noopener">
+          ANSSI – Agence Nationale de la Sécurité des Systèmes d'Information
+        </a>
+      </li>
+      <li>
+        <a href="https://www.cert.ssi.gouv.fr/" target="_blank" rel="noopener">
+          CERT-FR – Centre gouvernemental de veille, d'alerte et de réponse aux attaques informatiques
+        </a>
+      </li>
+      <li>
+        <a href="https://www.cnil.fr/" target="_blank" rel="noopener">
+          CNIL – Commission Nationale de l'Informatique et des Libertés
+        </a>
+      </li>
+      <li>
+        <a href="https://www.schneier.com/" target="_blank" rel="noopener">
+          Bruce Schneier – Blog Security
+        </a>
+      </li>
+      <li>
+        <a href="https://krebsonsecurity.com/" target="_blank" rel="noopener">
+          Krebs on Security – Brian Krebs
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/" target="_blank" rel="noopener">
+          GitHub – Veille sur projets open source de sécurité
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Loïc KOEHLY-DELGADO · Construit avec passion</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
